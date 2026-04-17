@@ -11,6 +11,9 @@ body {
   line-height: 1.6;
   color: #333;
   background-color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 /* Header */
@@ -53,9 +56,10 @@ main {
   margin: 2rem auto;
   padding: 0 1rem;
   background-color: #fff;
-  border-radius: 8px;
+  border-radius: 30px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   padding: 2rem;
+  flex: 1;
 }
 
 main h2 {
@@ -94,6 +98,11 @@ img {
   border-radius: 8px;
   display: block;
   margin: 0 auto;
+  transition: transform 0.3s ease;
+}
+
+main img:hover {
+  transform: scale(1.05);
 }
 
 /* Enlaces */
